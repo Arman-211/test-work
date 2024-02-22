@@ -1,0 +1,501 @@
+body {
+    font-family: ROBOTO, sans-serif;
+}
+
+.main {
+    margin-left: auto;
+}
+
+.main-logged-in {
+    width: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-logged-in {
+    width: 94%;
+}
+
+.sidebar {
+    height: 100%;
+    overflow: auto;
+    width: 6%;
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #374050;
+    padding-top: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fcfbfb;
+}
+
+.sidebar ul li a:hover {
+    color: #007bff;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.navbar {
+    margin-left: auto;
+    padding: 25px 30px;
+}
+
+.header__item-logo {
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    z-index: -1;
+    padding: 20px 15px 25px 12px;
+    border-radius: 0 0 25px 0;
+}
+
+.sidebar__block {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.sidebar__block-li:nth-child(1) {
+    width: fit-content;
+    height: auto;
+    float: left;
+}
+
+.sidebar__block-li:nth-child(2) {
+    width: fit-content;
+    height: auto;
+    float: left;
+    padding: 0 0 0 15px;
+    margin: -15px 0 0 0;
+}
+
+.header__item-title {
+    width: fit-content;
+    height: auto;
+    float: left;
+    text-align: left;
+    font-size: 13px;
+    line-height: 145%;
+    font-family: ROBOTO;
+}
+
+.add_button {
+    color: #FFFFFF;
+    font-family: Roboto, serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 0rem;
+    text-align: left;
+    background: #0FC5FF;
+    width: fit-content;
+    height: auto;
+    padding: 15px 60px;
+    border-radius: 6px;
+    border: unset;
+    float: right;
+    margin: 10px 0 0 0;
+}
+
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1; /* Ensure it appears on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal_info {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1; /* Ensure it appears on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal_update {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position the modal */
+    z-index: 1; /* Ensure it appears on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #374050;
+    margin: 15% auto; /* 15% from the top and centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Set the width of the modal */
+}
+
+/* Modal content */
+.modal-content-info {
+    background-color: #374050;
+    margin: 15% auto; /* 15% from the top and centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Set the width of the modal */
+    height: 600px; /* Set the width of the modal */
+}
+
+/* Modal content */
+.modal-content-update {
+    background-color: #374050;
+    margin: 15% auto; /* 15% from the top and centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Set the width of the modal */
+}
+
+/* Close button */
+.close {
+    color: #C4C4C4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: fit-content;
+    height: auto;
+}
+
+.close i {
+    width: 30px;
+    height: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close_info {
+    color: #C4C4C4;
+    float: right;
+    font-weight: bold;
+    width: fit-content;
+    height: auto;
+}
+
+.close_info svg {
+    width: 30px;
+    height: 30px;
+}
+
+.close_info:hover,
+.close_info:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container_block {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-brand:hover {
+    color: red;
+}
+
+.navbar-brand {
+    color: red;
+}
+
+.container_block_p {
+    border-bottom: 5px solid rgb(237, 28, 36);
+    width: 100%;
+    height: auto;
+    margin: 20px 0 -35px;
+}
+
+.section_block {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+}
+
+.section_row {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+}
+
+.section_item {
+    width: 49.7%;
+    height: auto;
+    float: left;
+}
+
+.table thead tr th {
+    width: auto;
+    font-family: ROBOTO;
+    color: #6E6E6F !important;
+    font-weight: 400;
+    padding: 15px 0 15px 40px;
+}
+
+.table {
+    border: #C4C4C4;
+}
+
+.table tbody {
+    vertical-align: middle !important;
+    width: 100%;
+    height: auto;
+}
+
+.table tbody tr td {
+    width: fit-content;
+    height: auto;
+    color: #6E6E6F !important;
+    font-family: ROBOTO;
+    padding: 22px 0 22px 40px;
+    background-color: #ffffff;
+
+}
+
+.table tbody tr {
+    width: 100%;
+    height: auto;
+    border: #C4C4C4;
+}
+
+.sidebar_ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.sidebar_li {
+    padding: 25px 0 0 35px;
+    margin: 0;
+    font-family: ROBOTO;
+}
+
+.modal_content_block {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_content_info_block_title {
+    color: white;
+    font-size: 50px;
+}
+
+.modal_content_info_block {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_content_block_title {
+    color: white;
+    font-size: 50px;
+}
+
+label {
+    color: white;
+}
+
+.attribute_container_block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.attribute_container_block_title {
+    color: white;
+    margin-bottom: 0;
+    padding: 20px 0 8px 0;
+}
+
+.add_button_submit {
+    color: #FFFFFF;
+    font-family: Roboto, serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 11px;
+    letter-spacing: 0rem;
+    text-align: left;
+    background: #0FC5FF;
+    width: fit-content;
+    height: auto;
+    padding: 15px 60px;
+    border-radius: 6px;
+    border: unset;
+    float: left;
+    margin: 20px 0 30px 0;
+}
+
+.add_product_form_article {
+    width: 70%;
+    height: auto;
+    padding: 9px;
+    border-radius: 8px;
+}
+
+.add_product_form_name {
+    width: 70%;
+    height: auto;
+    padding: 9px;
+    border-radius: 8px;
+}
+
+.add_product_form_status {
+    width: 70%;
+    height: auto;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+.add_product_form_attribute_name {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.attribute__box {
+    width: 32%;
+    height: auto;
+}
+
+.add_product_form_attribute_value {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.edit_product_block {
+    width: 98%;
+    background-color: #374050;
+    height: 100vh;
+    left: 20px;
+    color: white;
+}
+
+.addProductForm label {
+    width: 100%;
+    height: auto;
+    float: left;
+    font-family: ROBOTO;
+    padding: 12px 0 8px 0;
+}
+
+.attribute_label {
+    font-size: 25px;
+}
+
+.attributes-container {
+    padding: 20px 0 0 0;
+}
+
+.remove-button {
+    width: 10px;
+    height: 11px;
+    cursor: pointer;
+    color: #C4C4C4;
+    top: 60px;
+    position: relative;
+}
+
+.modal_content_info_box {
+    width: fit-content;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_content_info_block_icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.info_block {
+    width: fit-content;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 120px;
+}
+
+.info_block_name {
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #C3C6CA;
+    margin: 15px 0 0 0;
+}
+
+.info_block_info {
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #FFFFFF;
+    margin: 15px 0 0 0;
+}
+
+@media (max-width: 3200px) {
+    .navbar > .container {
+        max-width: 100%;
+    }
+}
